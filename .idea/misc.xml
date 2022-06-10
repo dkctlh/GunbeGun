@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/dkctl/AndroidStudioProjects/Diaryapp/app/src/main/res/drawable/black_cursor.xml" value="0.1425" />
+        <entry key="..\:/Users/dkctl/AndroidStudioProjects/Diaryapp/app/src/main/res/drawable/button_bg.xml" value="0.1425" />
+        <entry key="..\:/Users/dkctl/AndroidStudioProjects/Diaryapp/app/src/main/res/drawable/color_pass_toggle.xml" value="0.142" />
+        <entry key="..\:/Users/dkctl/AndroidStudioProjects/Diaryapp/app/src/main/res/drawable/custom_pass.xml" value="0.1045" />
+        <entry key="..\:/Users/dkctl/AndroidStudioProjects/Diaryapp/app/src/main/res/drawable/delete_bg.xml" value="0.142" />
+        <entry key="..\:/Users/dkctl/AndroidStudioProjects/Diaryapp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.142" />
+        <entry key="..\:/Users/dkctl/AndroidStudioProjects/Diaryapp/app/src/main/res/drawable/pass_toggle_selector.xml" value="0.1" />
+        <entry key="..\:/Users/dkctl/AndroidStudioProjects/Diaryapp/app/src/main/res/drawable/popup_bg.xml" value="0.142" />
+        <entry key="..\:/Users/dkctl/AndroidStudioProjects/Diaryapp/app/src/main/res/drawable/rounded_corner.xml" value="0.142" />
+        <entry key="..\:/Users/dkctl/AndroidStudioProjects/Diaryapp/app/src/main/res/drawable/splash_image.xml" value="0.142" />
+        <entry key="..\:/Users/dkctl/AndroidStudioProjects/Diaryapp/app/src/main/res/drawable/stil.xml" value="0.1045" />
+        <entry key="..\:/Users/dkctl/AndroidStudioProjects/Diaryapp/app/src/main/res/drawable/toggle.xml" value="0.142" />
+        <entry key="..\:/Users/dkctl/AndroidStudioProjects/Diaryapp/app/src/main/res/drawable/toggle_color.xml" value="0.142" />
+        <entry key="..\:/Users/dkctl/AndroidStudioProjects/Diaryapp/app/src/main/res/drawable/toogle.xml" value="0.142" />
+        <entry key="..\:/Users/dkctl/AndroidStudioProjects/Diaryapp/app/src/main/res/drawable/vazgec_bg.xml" value="0.142" />
+        <entry key="..\:/Users/dkctl/AndroidStudioProjects/Diaryapp/app/src/main/res/layout/activity_ani_ekle.xml" value="0.25" />
+        <entry key="..\:/Users/dkctl/AndroidStudioProjects/Diaryapp/app/src/main/res/layout/activity_ani_guncelle.xml" value="0.33" />
+        <entry key="..\:/Users/dkctl/AndroidStudioProjects/Diaryapp/app/src/main/res/layout/activity_home_page.xml" value="0.33" />
+        <entry key="..\:/Users/dkctl/AndroidStudioProjects/Diaryapp/app/src/main/res/layout/activity_kayit_ol.xml" value="0.22" />
+        <entry key="..\:/Users/dkctl/AndroidStudioProjects/Diaryapp/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/dkctl/AndroidStudioProjects/Diaryapp/app/src/main/res/layout/activity_main2.xml" value="0.25" />
+        <entry key="..\:/Users/dkctl/AndroidStudioProjects/Diaryapp/app/src/main/res/layout/activity_ozel_sifre.xml" value="0.1" />
+        <entry key="..\:/Users/dkctl/AndroidStudioProjects/Diaryapp/app/src/main/res/layout/ani_item_karti.xml" value="0.6020942408376964" />
+        <entry key="..\:/Users/dkctl/AndroidStudioProjects/Diaryapp/app/src/main/res/layout/locked_ani_item_karti.xml" value="0.33" />
+        <entry key="..\:/Users/dkctl/AndroidStudioProjects/Diaryapp/app/src/main/res/layout/logout_popup.xml" value="0.25" />
+        <entry key="..\:/Users/dkctl/AndroidStudioProjects/Diaryapp/app/src/main/res/layout/remove_popup.xml" value="0.33" />
+        <entry key="..\:/Users/dkctl/AndroidStudioProjects/Diaryapp/app/src/main/res/layout/slash_screen.xml" value="0.1671195652173913" />
+        <entry key="..\:/Users/dkctl/AndroidStudioProjects/Diaryapp/app/src/main/res/xml/provider_paths.xml" value="0.15942028985507245" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

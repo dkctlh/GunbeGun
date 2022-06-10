@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FEFAF5"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ani_ekle_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FEFAF5"
+        android:visibility="visible"
+        tools:context=".ani_ekle">
+
+        <TextView
+            android:id="@+id/anıekle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="104dp"
+            android:text="Anını Ekle"
+            android:textColor="#F56937"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tarih1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="11dp"
+            android:text="Tarih :"
+            android:textColor="#333333"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/anıekle" />
+
+        <TextView
+            android:id="@+id/konum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="9dp"
+            android:text="Konum :"
+            android:textColor="#333333"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tarih1" />
+
+        <TextView
+            android:id="@+id/tarih2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="73dp"
+            android:layout_marginTop="11dp"
+            android:text="TextView"
+            android:textColor="#333333"
+            android:visibility="invisible"
+            app:layout_constraintStart_toEndOf="@+id/tarih1"
+            app:layout_constraintTop_toBottomOf="@+id/anıekle" />
+
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="73dp"
+            android:layout_marginTop="9dp"
+            android:background="#F56937"
+            android:maxLength="25"
+            android:text="TextView"
+            android:textColor="#F8F8F8"
+            android:visibility="invisible"
+            app:layout_constraintStart_toEndOf="@+id/konum"
+            app:layout_constraintTop_toBottomOf="@+id/tarih2" />
+
+        <EditText
+            android:id="@+id/ani_ekle1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="#FFFFFF"
+            android:ems="10"
+
+            android:inputType="textMultiLine|text"
+            android:textColor="#333333"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title_diary"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mod"
+            app:srcCompat="@drawable/separator" />
+
+        <TextView
+            android:id="@+id/mod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="14dp"
+            android:text="Modunu Seç :"
+            android:textColor="#333333"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/konum" />
+
+        <ImageView
+            android:id="@+id/happy"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="73dp"
+            android:layout_marginTop="14dp"
+            android:background="#FEFAF5"
+            app:layout_constraintStart_toEndOf="@+id/mod"
+            app:layout_constraintTop_toBottomOf="@+id/location"
+            app:srcCompat="@drawable/happy" />
+
+        <ImageView
+            android:id="@+id/sad"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="14dp"
+            android:background="#FEFAF5"
+            app:layout_constraintStart_toEndOf="@+id/happy"
+            app:layout_constraintTop_toBottomOf="@+id/location"
+            app:srcCompat="@drawable/sad" />
+
+        <ImageView
+            android:id="@+id/angry"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="14dp"
+            android:background="#FEFAF5"
+            app:layout_constraintStart_toEndOf="@+id/sad"
+            app:layout_constraintTop_toBottomOf="@+id/location"
+            app:srcCompat="@drawable/angry" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/atach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="72dp"
+            android:clickable="true"
+            app:tint="@null"
+            app:backgroundTint="#F56937"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/atachment"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"
+            android:clickable="true"
+            android:visibility="invisible"
+            app:tint="@null"
+            app:backgroundTint="#FFFFFF"
+            app:layout_constraintBottom_toTopOf="@+id/atach"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/image" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/film"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"
+            android:clickable="true"
+            app:tint="@null"
+            android:visibility="invisible"
+            app:backgroundTint="#FFFFFF"
+            app:layout_constraintBottom_toTopOf="@+id/image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/film" />
+
+        <ImageView
+            android:id="@+id/lock"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toStartOf="@+id/save"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/unlock" />
+
+        <ImageSwitcher
+            android:id="@+id/imageS"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:visibility="invisible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ani_ekle1" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/videos"
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:visibility="invisible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageS">
+
+            <ImageView
+                android:id="@+id/playpause"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="175dp"
+                android:layout_marginBottom="175dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/videoView"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/pause_play" />
+
+            <VideoView
+                android:id="@+id/videoView"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="9dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/save"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/like" />
+
+        <EditText
+            android:id="@+id/title_diary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="#FFFFFF"
+            android:ems="10"
+            android:hint="Başlık"
+            android:paddingLeft="16dp"
+            android:inputType="textPersonName"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/özel_sifre"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FEFAF5"
+        android:visibility="invisible">
+
+        <Button
+            android:id="@+id/ozelsifrekaydet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/button_bg"
+            android:text="Kaydet"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/sifregir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="65dp"
+            android:text="Şifre Giriniz"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="185dp"
+            android:layout_height="185dp"
+            android:layout_marginTop="48dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sifregir"
+            app:srcCompat="@drawable/bro" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:text="Erişim İçin Şifrenizi Girin"
+            android:textColor="#000000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/sifrely"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="8dp"
+            android:textColorHint="#C5C5C7"
+            app:hintTextColor="#C5C5C7"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/color_pass"
+
+            >
+
+            <EditText
+                android:id="@+id/sifreguncel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:backgroundTint="#00000000"
+                android:ems="10"
+                android:hint="Şifrenizi bu alana giriniz."
+                android:inputType="textPassword"
+                android:paddingStart="16dp"
+                android:textColor="#000000"
+                android:textColorHighlight="#FEFAF5"
+                android:textColorHint="#C5C5C7"
+                android:textColorLink="#000000"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
